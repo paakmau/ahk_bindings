@@ -45,6 +45,8 @@ EdgeEditBindingsActive() {
             switch focusedEl.Type {
                 case UIA.Type.Edit:
                     return true
+                case UIA.Type.ListItem:
+                    return true
                 case UIA.Type.Document:
                     if caretVisible {
                         return true
